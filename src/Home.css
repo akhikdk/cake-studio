@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.main-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #ffcc00;
+}
+
+.hero-section {
+  background-image: url('https://wallpapers.com/images/hd/freshly-baked-bread-loaves-y1oqsz5s7b1ya0yl.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
+  border-radius: 12px;
+  z-index: 5;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+}
+
+
+.about-section {
+  background-image: url('https://img.freepik.com/premium-photo/top-view-bakery-background-with-cooking-baking-ingredients-blackboard_817921-7345.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 80px 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-wrapper {
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffe6b3;
+  text-align: center;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
