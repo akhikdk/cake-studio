@@ -7,9 +7,9 @@ function Nav(){
       <nav>
             <ul className="nav-links">
               <Link to={"/"}>HOME</Link>
-              <Link to={'/contact'}>contact us</Link>
-              <li>Product</li>
-              <li>Help</li>
+              <Link to={'/contact'}>Contact</Link>
+             <Link to={'/product'}>Product</Link>
+             <Link to = {'/help'}>Help</Link>
             </ul>
      </nav> 
     </>
