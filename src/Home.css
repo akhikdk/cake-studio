@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.4);
+  
 }
 
 .logo {
@@ -49,9 +49,13 @@ body {
 .nav-links li:hover {
   color: #ffcc00;
 }
+.navi{
+  color: #fff;
+  text-decoration: none;
+}
 
 .hero-section {
-  background-image: url('https://wallpapers.com/images/hd/freshly-baked-bread-loaves-y1oqsz5s7b1ya0yl.jpg');
+  background-image: url('https://img.freepik.com/free-photo/nice-muffin-violet-background_23-2147793056.jpg?semt=ais_hybrid&w=740&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,7 +70,6 @@ body {
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.5);
   padding: 30px 40px;
   border-radius: 12px;
   z-index: 5;
@@ -83,7 +86,7 @@ body {
 
 
 .about-section {
-  background-image: url('https://img.freepik.com/premium-photo/top-view-bakery-background-with-cooking-baking-ingredients-blackboard_817921-7345.jpg');
+  background-image: url('https://cdn.pixabay.com/video/2022/05/04/115998-706324010_tiny.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +101,6 @@ body {
 
 .about-wrapper {
   max-width: 900px;
-  background: rgba(0, 0, 0, 0.6);
   padding: 40px;
   border-radius: 12px;
 }
@@ -106,7 +108,7 @@ body {
 .section-title {
   font-size: 32px;
   margin-bottom: 30px;
-  color: #ffe6b3;
+  
   text-align: center;
 }
 
@@ -114,3 +116,46 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
 }
+  .footer {
+    background-color: #f8e6e0;
+    color: #5a2a27;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 3px solid #d4a373;
+  }
+
+  .footer-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .footer-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    margin: 20px 0;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.5);
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #8a5a58;
+    margin-top: 20px;
+  }

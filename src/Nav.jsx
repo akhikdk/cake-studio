@@ -6,10 +6,10 @@ function Nav(){
     return <>
       <nav>
             <ul className="nav-links">
-              <Link to={"/"}>HOME</Link>
-              <Link to={'/contact'}>Contact</Link>
-             <Link to={'/product'}>Product</Link>
-             <Link to = {'/help'}>Help</Link>
+              <Link  className="navi" to={'/About'}>About us</Link>
+              <Link className="navi" to={'/contact'}>Contact</Link>
+             <Link className="navi" to={'/product'}>Product</Link>
+             <Link className="navi" to = {'/Help'}>Help</Link>
             </ul>
      </nav> 
     </>

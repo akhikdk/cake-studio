@@ -7,8 +7,16 @@
 .section-title {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 2em;
+  font-size: 3em;
   color: #333;
+  .violet { color: violet; }
+.indigo { color: indigo; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color:black; }
+.orange { color: orange; }
+.red { color: red; }
+
 }
 
 

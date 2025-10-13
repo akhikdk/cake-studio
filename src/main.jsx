@@ -6,6 +6,8 @@ import Demo from './Home';
 import Contact from './Contact';
 import Card from './card/card';
 import Product from './card/product';
+import Help from './Help';
+import About from './About';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,6 +17,9 @@ createRoot(document.getElementById('root')).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/card" element={<Card />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/Product" element={<Product/>} />
+        <Route path="/Help" element={<Help/>} />
+         <Route path="/About" element={<About/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
