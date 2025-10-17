@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./product.css";
 
-function ProductCard({ image, name, price }) {
+function ProductCard({ image, name, price,mode }) {
+
+
+  const [order,SetOrder]=useState(true)
+ 
+
+  
   return (
-    <div className="card">
+    <div className="card" style={{backgroundColor:`${mode=="light"?"white":"black"}`}}>
       <img src={image} alt={name} className="card-image" />
       <div className="container">
         <h4>{name}</h4>
           <p className="price">₹{price}</p>
-        <button className="order-button">Order Now</button>
         
+        {
+          order?<button className="order-button" onClick={()=>SetOrder(false)} >Order Now</button>:<button className="order-button">ADDED TO CART</button>
+        }
       </div>
     </div>
   );
 }
 
 function Product() {
+  const [mode,Setmode]=useState("light")
+
   const cakes = [
     {
       name: "Vancho",
@@ -100,22 +110,38 @@ function Product() {
    }
   ];
 
+  const changemode=()=>{
+    if(mode=="light"){
+      Setmode("dark")
+    }else{
+      Setmode("light")
+    }
+  }
   return (
-    <div className="product-section">
+    <div className="product-section" style={{backgroundColor:`${mode=="light"?"white":"black"}`}}>
+
+      <label className="theme-toggle-btn">
+  <input type="checkbox" onChange={changemode} checked={mode === "dark"} />
+  <span className="slider">
+    <span className="icon sun">🌞</span>
+    <span className="icon moon">🌚</span>
+  </span>
+</label>
+
       <h1 className="section-title">
           <span style={{ color: 'violet' }}>O</span>
   <span style={{ color: 'indigo' }}>u</span>
   <span style={{ color: 'blue' }}>r</span>
   <span> </span>
   <span style={{ color: 'green' }}>C</span>
-  <span style={{ color: 'black' }}>a</span>
+  <span style={{ color: 'aqua' }}>a</span>
   <span style={{ color: 'orange' }}>k</span>
   <span style={{ color: 'red' }}>e</span>
   <span style={{ color: 'violet' }}>s</span>
       </h1>
       <div className="card-grid">
         {cakes.map((cake, index) => (
-          <ProductCard key={index} name={cake.name} image={cake.image} price={cake.Price} />
+          <ProductCard key={index} name={cake.name} image={cake.image} price={cake.Price} mode={mode} />
         ))}
       </div>
             <footer className="footer">

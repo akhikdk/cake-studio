@@ -48,6 +48,7 @@ body {
 
 .nav-links li:hover {
   color: #ffcc00;
+ 
 }
 .navi{
   color: #fff;
@@ -159,3 +160,77 @@ body {
     color: #8a5a58;
     margin-top: 20px;
   }
+  
+/* Theme Toggle Button Styles */
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.theme-toggle-btn {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.theme-toggle-btn input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  background-color: #ccc;
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.theme-toggle-btn input:checked + .slider::before {
+  transform: translateX(36px);
+}
+
+.theme-toggle-btn input:checked + .slider {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Dark and Light Mode Backgrounds */
+.light-mode h1{
+  /* background-color: #ffffff; */
+  color: #000000;
+}
+.light-mode h2{
+  /* background-color: #ffffff; */
+  color: #000000;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}

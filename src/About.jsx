@@ -5,12 +5,14 @@ import Nav from "./Nav";
 function About() {
   return (
     <>
+      
       <Nav />
 
       <div className="main-about">
         <div className="about-container">
-          <h1>About Us</h1>
-          <p>
+          <h1 className="head1">About Us</h1>
+
+          <p className="para1">
             Welcome to <strong>Cake Studio</strong>, where edible art meets unforgettable flavor.
             We specialize in crafting custom cakes and confections that are as beautiful as they are delicious.
             Whether you're celebrating a birthday, wedding, baby shower, or any of life's sweet moments, our team
@@ -26,6 +28,7 @@ function About() {
           </p>
         </div>
 
+    
         <footer className="footer">
           <div className="footer-content">
             <h2>Cake Studio</h2>
